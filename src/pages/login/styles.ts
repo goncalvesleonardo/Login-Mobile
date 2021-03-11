@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   position: relative;
-  width: 375px;
-  height: 652px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const ViewTop = styled.View`
@@ -30,7 +30,7 @@ export const Text = styled.Text`
   width: 212px;
   height: 30px;
   left: 20%;
-  top: 30px;
+  top: 130px;
   text-align: center;
   font-family: 'Montserrat Regular';
 `;
