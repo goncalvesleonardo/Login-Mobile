@@ -1,12 +1,17 @@
 import React from 'react';
+import { RectButtonProperties } from 'react-native-gesture-handler';
 
-import { Container, Text } from './styles';
+import { Container, ButtonText } from './styles';
+
+interface ButtonProps extends RectButtonProperties {
+  children: string;
+}
 
 
-const SubmitButtom: React.FC = () => {
+const SubmitButtom: React.FC<ButtonProps> = ({ children, ... rest }) => {
   return (
-    <Container>
-      <Text>ENTRAR</Text>
+    <Container {... rest}>
+      <ButtonText>{children}</ButtonText>
     </Container>
   )
 }

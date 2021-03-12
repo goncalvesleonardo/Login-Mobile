@@ -2,7 +2,6 @@ import React from 'react';
 import { Image } from 'react-native';
 
 import LoginComponent from '../../components/login/loginComponent';
-import SubmitButton from '../../components/submitButton/button';
 
 import { Container, ViewTop, ViewBottom, Text } from './styles';
 
@@ -19,7 +18,6 @@ const Login: React.FC = () => {
         <Text>Clique Aqui</Text>
       </ViewBottom>
       <LoginComponent />
-      <SubmitButton />
     </Container>
   )
 }

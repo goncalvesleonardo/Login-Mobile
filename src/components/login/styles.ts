@@ -34,3 +34,16 @@ export const Text = styled.Text`
   color: #989FDB;
   font-family: 'Montserrat Regular';
 `;
+
+export const TextLabel= styled.Text`
+  margin-bottom: 10px;
+  width: 90%;
+  height: 10%;
+  left: 14%;
+  top: 6%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+  color: #383E71;
+  font-family: 'Montserrat Regular';
+`;
