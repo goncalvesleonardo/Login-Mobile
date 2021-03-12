@@ -30,7 +30,6 @@ const LoginComponent: React.FC = () => {
   }
 
   const submit = () => {
-
     if (email == '') {
       flashError('O campo E-MAIL é obrigatório');
     } else if (password == '') {

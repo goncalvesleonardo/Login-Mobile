@@ -12,6 +12,21 @@ Projeto de login em react native utilizando Redux, Redux-Saga
 
 * 0.0.1
     * Funcionalidade de Login funcionando com mockapi.io
+    * Usuários cadastrados:
+
+    "id": "1",
+    "email": "teste@teste.com.br",
+    "password": "123456"
+
+    "id": "2",
+    "email": "usuario@usuario.com.br",
+    "password": "1234"
+
+    "id": "3",
+    "email": "usu",
+    "password": "123"
+
+
 
 ## Meta
 
