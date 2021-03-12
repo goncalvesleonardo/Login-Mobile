@@ -13,7 +13,7 @@ const LoginComponent: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const submit = () => {
+  const validateLogin = () => {
     let validateLogin = false;
 
     users.map((user) => {
@@ -26,6 +26,18 @@ const LoginComponent: React.FC = () => {
       flashSuccess('Bem-vindo');
     } else {
       flashError('Usuário ou senha inválida');
+    }
+  }
+
+  const submit = () => {
+
+    if (email == '') {
+      flashError('O campo E-MAIL é obrigatório');
+    } else if (password == '') {
+      console.log(email, password);
+      flashError('O campo SENHA é obrigatório');
+    } else {
+      validateLogin();
     }
   };
 
@@ -46,7 +58,6 @@ const LoginComponent: React.FC = () => {
           <ContainerInput>
             <TextLabel>E-MAIL</TextLabel>
             <Input
-              placeholder="Informe a senha"
               value={email}
               onChangeText={email => setEmail(email)}
             />
@@ -54,7 +65,6 @@ const LoginComponent: React.FC = () => {
           <ContainerInput>
           <TextLabel>SENHA</TextLabel>
           <Input
-            placeholder="Informe a senha"
             value={password}
             onChangeText={password => setPassword(password)}
           />
