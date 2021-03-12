@@ -9,10 +9,8 @@ interface InputProps extends TextInputProps {
 
 const Input: React.FC<InputProps> = ({ name, ... rest }) => {
   return (
-    <Container>
-    <TextInput placeholderTextColor="#989FDB" {... rest}
-
-    />
+  <Container>
+    <TextInput placeholderTextColor="#989FDB" {... rest} />
   </Container>
   );
 };
